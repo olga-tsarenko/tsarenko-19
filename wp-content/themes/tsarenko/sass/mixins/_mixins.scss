@@ -1,0 +1,23 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin button {
+  display: inline-block;
+  a {
+    display: inline-block;
+    padding: 10px 18px;
+    border-bottom: 2px solid #ffea00;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+  }
+}
+
+

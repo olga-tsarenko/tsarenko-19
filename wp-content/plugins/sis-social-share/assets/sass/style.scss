@@ -1,0 +1,163 @@
+@import "variables";
+
+.sis-social-share {
+    [class^="sis-svg-"] {
+        padding: 10px;
+        box-sizing: content-box;
+        width: 28px;
+        height: 28px;
+
+        path {
+            fill: #ffffff;
+        }
+        &:hover {
+            background-color: #ffffff;
+        }
+    }
+
+    > a,
+    > a:hover {
+        box-shadow: none;
+        border: none;
+    }
+}
+.sis-svg {
+    // Titter icon
+    &-twitter {
+        background-color: #00aced;
+        border: 1px solid #00aced;
+
+        &:hover {
+            border: 1px solid #00aced;
+
+            path {
+                fill: #00aced;
+            }
+        }
+    }
+    
+    // Stumbleupon
+    &-stumbleupon {
+        background-color: #EB4823;
+        border: 1px solid #EB4823;
+
+        &:hover {
+            border: 1px solid #EB4823;
+
+            path {
+                fill: #EB4823;
+            }
+        }
+    }
+    
+    // Reddit
+    &-reddit {
+        background-color: #ff4500;
+        border: 1px solid #ff4500;
+
+        &:hover {
+            border: 1px solid #ff4500;
+
+            path {
+                fill: #ff4500;
+            }
+        }
+    }
+
+    // Pinterest
+    &-pinterest {
+        background-color: #cb2027;
+        border: 1px solid #cb2027;
+
+        &:hover {
+            border: 1px solid #cb2027;
+
+            path {
+                fill: #cb2027;
+            }
+        }
+    }
+
+    // tumblr
+    &-tumblr {
+        background-color: #32506d;
+        border: 1px solid #32506d;
+
+        &:hover {
+            border: 1px solid #32506d;
+
+            path {
+                fill: #32506d;
+            }
+        }
+    }
+
+
+    // linkedin
+    &-linkedin {
+        background-color: #007bb6;
+        border: 1px solid #007bb6;
+
+        &:hover {
+            border: 1px solid #007bb6;
+
+            path {
+                fill: #007bb6;
+            }
+        }
+    }
+
+
+    // facebook
+    &-facebook {
+        background-color: $color-facebook;
+        border: 1px solid $color-facebook;
+        &:hover {
+            border: 1px solid $color-facebook;
+
+            path {
+                fill: $color-facebook;
+            }
+        }
+    }
+
+
+    // google plus
+    &-google-plus {
+        background-color: $color-google;
+        border: 1px solid $color-google;
+        &:hover {
+            border: 1px solid $color-google;
+
+            path {
+                fill: $color-google;
+            }
+        }
+    }
+    // digg
+    &-digg {
+        background-color: $color-digg;
+        border: 1px solid $color-digg;
+        &:hover {
+            border: 1px solid $color-digg;
+
+            path {
+                fill: $color-digg;
+            }
+        }
+    }
+}
+
+.sis-site-button {
+    position: fixed;
+    top: 50px;
+    width: 50px;
+    z-index: 999999;
+
+    &.sis-left {
+        left: 10px;
+    }
+    &.sis-right {
+        right: 10px;
+    }
+}

@@ -1,0 +1,27 @@
+.site-header {
+    padding: 37px 0 22px;
+    .logo-nav {
+        @include clearfix;
+        .logo {
+            display: block;
+            padding-left: 119px;
+            float: left;
+        }
+        .main-navigation {
+            float: right;
+            padding-right: 80px;
+            padding-top: 25px;
+            clear: none;
+            width: auto;
+            @include clearfix;
+            li {
+                float: left;
+                margin: 0 30px;
+                a {
+                    box-sizing: border-box;
+                    padding: 21px 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,178 @@
+
+ul, ol, h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.body-wrapper {
+    max-width: 1670px;
+    margin: 0 auto;
+    padding: 15px;
+
+    ul {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+    }
+
+    .site-content {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        padding-top: 78px;
+
+        .content-area {
+            width: 67.2%;
+            box-sizing: border-box;
+
+        }
+
+        .widget-area {
+            width: 31%;
+            box-sizing: border-box;
+            .popular-widget{
+                .pop-widget-tabs{
+                    display: none;
+                }
+                .pop-inside{
+                    border: none;
+                    ul{
+                        li{
+                            border: none;
+                            float: none;
+                            width: 100%;
+                            margin: 0;
+                            &:before{
+                                display: none;
+                            }
+                            a{
+                                display: block;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            section {
+                background-color: #403f46;
+                margin-bottom: 30px;
+                padding: 35px;
+                .widget-title {
+                    color: #ffea00;
+                    text-transform: uppercase;
+                    line-height: 21px;
+                    padding-bottom: 35px;
+
+                }
+            }
+            .search-form {
+                padding: 21px 0;
+                .search-field {
+                    border-radius: 14px;
+                    padding: 8px 0 6px 25px;
+                }
+            }
+            .widget {
+                ul {
+                    @include clearfix;
+                    text-align: left;
+                    width: 100%;
+                    li {
+                        float: left;
+                        width: 50%;
+                        box-sizing: border-box;
+                        margin-bottom: 15px;
+                        &:before {
+                            content: '';
+                            background: url("../../images/arrow.png") no-repeat center;
+                            width: 31px;
+                            height: 31px;
+                            display: block;
+                            float: left;
+                        }
+                        a {
+                            color: #ffffff;
+                            font-size: 13px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            line-height: 21px;
+                            display: inline-block;
+                            padding-top: 6px;
+                            margin-left: 15px;
+
+                        }
+                    }
+                }
+            }
+            .tagcloud {
+                text-align: left;
+                a {
+                    padding: 6px 10px;
+                    color: #424147;
+                    background-color: #ffea00;
+                    margin: 2px 1px;
+                    text-transform: uppercase;
+                    line-height: 20px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .dpsp-networks-btns-wrapper {
+        li {
+            padding-right: 26px;
+        }
+    }
+    .dpsp-has-button-background .dpsp-networks-btns-wrapper .dpsp-facebook, .dpsp-has-button-background .dpsp-networks-btns-wrapper .dpsp-twitter, .dpsp-has-button-background .dpsp-networks-btns-wrapper .dpsp-google-plus, .dpsp-has-button-background .dpsp-networks-btns-wrapper .dpsp-pinterest {
+        background: yellow;
+        border-color: yellow;
+    }
+    .dpsp-has-icon-background .dpsp-networks-btns-wrapper .dpsp-facebook:before, .dpsp-has-icon-background .dpsp-networks-btns-wrapper .dpsp-twitter:before, .dpsp-has-icon-background .dpsp-networks-btns-wrapper .dpsp-twitter:before, .dpsp-has-icon-background .dpsp-networks-btns-wrapper .dpsp-google-plus:before, .dpsp-has-icon-background .dpsp-networks-btns-wrapper .dpsp-pinterest:before {
+        background-color: black;
+        border-color: black;
+
+    }
+    .dpsp-networks-btns-wrapper .dpsp-network-btn:before {
+        border: 3px solid;
+    }
+    .dpsp-networks-btns-wrapper .dpsp-network-btn:before {
+        width: 30px;
+        font-size: 13px;
+        line-height: 27px;
+    }
+    .dpsp-networks-btns-wrapper .dpsp-network-btn {
+        height: 29px;
+        min-width: 30px;
+    }
+
+    #dpsp-content-bottom {
+        margin: 0 0 50px;
+        @include clearfix;
+
+        .dpsp-share-text {
+            float: left;
+
+            display: inline-block;
+            background-color: #424147;
+            color: #ffea00;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 9px 35px 8px 20px;
+            margin-bottom: 25px;
+        }
+        ul {
+            float: right;
+            .dpsp-network-label-wrapper{
+                margin: auto;
+            }
+
+        }
+    }
+}
+
+
+

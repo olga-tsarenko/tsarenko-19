@@ -1,0 +1,121 @@
+.wrapper {
+    background-color: #f6f6f6;
+}
+
+body {
+    background-color: white;
+}
+
+header#masthead {
+    .main-navigation {
+        li {
+            &.current_page_item,
+            &.current_page_parent {
+                a {
+                    background: #ffea00; //active link in main nav
+                }
+            }
+            a {
+                color: #000000;
+                &:hover {
+                    background: #ffea00; //hover on link on main nav
+                }
+            }
+        }
+    }
+}
+
+.site-header {
+    .main-navigation {
+        li {
+            &.current_page_item {
+                a {
+                    background: #ffea00; //active link in main nav
+                }
+            }
+            a {
+                color: #000000;
+                &:hover {
+                    background: #ffea00; //hover on link on main nav
+                }
+            }
+        }
+    }
+}
+
+.title-part {
+    h1 {
+        background-color: #424146;
+        color: #ffea00;
+    }
+}
+
+.post {
+    .entry-title {
+        color: #000000;
+    }
+}
+
+.entry-content {
+    p {
+        color: #424147;
+
+    }
+}
+
+footer#colophon {
+    .main-footer {
+        background-color: #414146;
+        color: #ffffff;
+        .widgets-inner:nth-child(2) {
+            padding-left: 44px;
+            span {
+                background-color: #000000 !important;
+            }
+        }
+        .widgets-inner:nth-child(3) {
+            .widget-item:nth-child(1) {
+                .contact-email {
+                    span {
+                        color: #ffea00;
+                    }
+                }
+            }
+            input[type="email"] {
+                background-color: #414146;
+                color: #ffffff;
+            }
+        }
+    }
+    .low-footer {
+        background-color: #000000;
+        .site-info {
+            color: #ffffff;
+            a {
+                color: #ffffff;
+            }
+        }
+        .footer-navigation {
+            a {
+                color: #ffffff;
+            }
+        }
+    }
+
+
+}
+.pagination {
+    .current{
+        background-color: yellow;
+        padding: 10px 15px;
+    }
+    a {
+        color: #414146;
+        padding: 10px 15px;
+        &:hover{
+           color: inherit;
+            background-color: yellow;
+        }
+    }
+}
+
